@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocFilm - Film Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">VocFilm</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Watchlist</a></li>
+                    <li><a href="#">Popular</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="welcome-section">
+            <h1>Selamat datang!</h1>
+            <p>Mulai pencarian film yang ingin kamu review di sini.</p>
+            <input type="text" id="search-bar" placeholder="Search movies...">
+        </div>
+    </header>
+
+    <!-- Trending Movies Section -->
+    <section id="trending">
+        <h2>Trending Movies</h2>
+        <div class="carousel">
+            <div class="carousel-track" id="trending-list"></div>
+            <button class="carousel-button next" id="next-button">❯</button>
+        </div>
+    </section>
+
+    <!-- Latest Movies Section -->
+    <section id="latest">
+        <h2>Latest Movies</h2>
+        <div class="carousel">
+            <div class="carousel-track" id="latest-list"></div>
+            <button class="carousel-button next" id="next-latest-button">❯</button>
+        </div>
+    </section>
+    <footer>
+        <p>© Vocfilm 2024</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
